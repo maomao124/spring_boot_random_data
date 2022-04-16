@@ -1,0 +1,204 @@
+2022-04-16 18:54:46.199  INFO 1964 --- [main] m.s.data.RandomDataTest                  : Starting RandomDataTest using Java 16.0.2 on mao with PID 1964 (started by mao in H:\程序\大三下期\spring_boot测试用例设置随机数据)
+2022-04-16 18:54:46.200 DEBUG 1964 --- [main] m.s.data.RandomDataTest                  : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-16 18:54:46.201  INFO 1964 --- [main] m.s.data.RandomDataTest                  : The following 1 profile is active: "dev"
+2022-04-16 18:54:46.625  WARN 1964 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'randomData': Could not bind properties to 'RandomData' : prefix=data, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'data.uuid' to long
+2022-04-16 18:54:46.633  INFO 1964 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-16 18:54:46.655 ERROR 1964 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'data.uuid' to long:
+
+    Property: data.uuid
+    Value: ${random.uuid}
+    Origin: class path resource [application.yml] - 49:9
+    Reason: failed to convert java.lang.String to long (caused by java.lang.NumberFormatException: For input string: "df7c71d5-7322-4158-9663-4672ba14cddd")
+
+Action:
+
+Update your application's configuration
+
+2022-04-16 18:54:46.700  INFO 1964 --- [main] m.s.data.RandomDataTest                  : Starting RandomDataTest using Java 16.0.2 on mao with PID 1964 (started by mao in H:\程序\大三下期\spring_boot测试用例设置随机数据)
+2022-04-16 18:54:46.700 DEBUG 1964 --- [main] m.s.data.RandomDataTest                  : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-16 18:54:46.701  INFO 1964 --- [main] m.s.data.RandomDataTest                  : The following 1 profile is active: "dev"
+2022-04-16 18:54:46.805  WARN 1964 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'randomData': Could not bind properties to 'RandomData' : prefix=data, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'data.uuid' to long
+2022-04-16 18:54:46.807  INFO 1964 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-16 18:54:46.809 ERROR 1964 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'data.uuid' to long:
+
+    Property: data.uuid
+    Value: ${random.uuid}
+    Origin: class path resource [application.yml] - 49:9
+    Reason: failed to convert java.lang.String to long (caused by java.lang.NumberFormatException: For input string: "dd7436f9-4ba1-46d8-97ce-f2f940be13a2")
+
+Action:
+
+Update your application's configuration
+
+2022-04-16 18:54:46.814 ERROR 1964 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@57c03d88] to prepare test instance [mao.spring_boot_random_data.data.RandomDataTest@727eb8cb]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.6.6.jar:2.6.6]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71) ~[junit5-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:na]
+Caused by: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'randomData': Could not bind properties to 'RandomData' : prefix=data, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'data.uuid' to long
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:92) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:78) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136) ~[spring-boot-test-2.6.6.jar:2.6.6]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 70 common frames omitted
+Caused by: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'data.uuid' to long
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:384) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:344) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$4(Binder.java:469) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:95) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:83) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:59) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$5(Binder.java:473) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:587) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withDataObject(Binder.java:573) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$300(Binder.java:534) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bindDataObject(Binder.java:471) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:411) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:340) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:329) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:259) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:246) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.bind(ConfigurationPropertiesBinder.java:95) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:89) ~[spring-boot-2.6.6.jar:2.6.6]
+	... 88 common frames omitted
+Caused by: org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [long] for value 'df7c71d5-7322-4158-9663-4672ba14cddd'; nested exception is java.lang.NumberFormatException: For input string: "df7c71d5-7322-4158-9663-4672ba14cddd"
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47) ~[spring-core-5.3.18.jar:5.3.18]
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:192) ~[spring-core-5.3.18.jar:5.3.18]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:109) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:100) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:92) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bindProperty(Binder.java:456) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:400) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:340) ~[spring-boot-2.6.6.jar:2.6.6]
+	... 104 common frames omitted
+Caused by: java.lang.NumberFormatException: For input string: "df7c71d5-7322-4158-9663-4672ba14cddd"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[na:na]
+	at java.base/java.lang.Long.parseLong(Long.java:714) ~[na:na]
+	at java.base/java.lang.Long.valueOf(Long.java:1166) ~[na:na]
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:214) ~[spring-core-5.3.18.jar:5.3.18]
+	at org.springframework.core.convert.support.StringToNumberConverterFactory$StringToNumber.convert(StringToNumberConverterFactory.java:64) ~[spring-core-5.3.18.jar:5.3.18]
+	at org.springframework.core.convert.support.StringToNumberConverterFactory$StringToNumber.convert(StringToNumberConverterFactory.java:50) ~[spring-core-5.3.18.jar:5.3.18]
+	at org.springframework.core.convert.support.GenericConversionService$ConverterFactoryAdapter.convert(GenericConversionService.java:437) ~[spring-core-5.3.18.jar:5.3.18]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41) ~[spring-core-5.3.18.jar:5.3.18]
+	... 111 common frames omitted
+
+2022-04-16 18:55:52.756  INFO 17796 --- [main] m.s.data.RandomDataTest                  : Starting RandomDataTest using Java 16.0.2 on mao with PID 17796 (started by mao in H:\程序\大三下期\spring_boot测试用例设置随机数据)
+2022-04-16 18:55:52.758 DEBUG 17796 --- [main] m.s.data.RandomDataTest                  : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-16 18:55:52.758  INFO 17796 --- [main] m.s.data.RandomDataTest                  : The following 1 profile is active: "dev"
+2022-04-16 18:55:53.292  INFO 17796 --- [main] m.s.data.RandomDataTest                  : Started RandomDataTest in 0.895 seconds (JVM running for 1.744)
+2022-04-16 18:56:27.645  INFO 3984 --- [main] m.s.data.RandomDataTest                  : Starting RandomDataTest using Java 16.0.2 on mao with PID 3984 (started by mao in H:\程序\大三下期\spring_boot测试用例设置随机数据)
+2022-04-16 18:56:27.646 DEBUG 3984 --- [main] m.s.data.RandomDataTest                  : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-16 18:56:27.647  INFO 3984 --- [main] m.s.data.RandomDataTest                  : The following 1 profile is active: "dev"
+2022-04-16 18:56:28.116  INFO 3984 --- [main] m.s.data.RandomDataTest                  : Started RandomDataTest in 0.841 seconds (JVM running for 1.655)
+2022-04-16 18:56:42.715  INFO 272 --- [main] m.s.data.RandomDataTest                  : Starting RandomDataTest using Java 16.0.2 on mao with PID 272 (started by mao in H:\程序\大三下期\spring_boot测试用例设置随机数据)
+2022-04-16 18:56:42.717 DEBUG 272 --- [main] m.s.data.RandomDataTest                  : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-16 18:56:42.717  INFO 272 --- [main] m.s.data.RandomDataTest                  : The following 1 profile is active: "dev"
+2022-04-16 18:56:43.201  INFO 272 --- [main] m.s.data.RandomDataTest                  : Started RandomDataTest in 0.838 seconds (JVM running for 1.66)
+2022-04-16 18:58:31.366  INFO 15636 --- [main] m.s.SpringBootRandomDataApplication      : Starting SpringBootRandomDataApplication using Java 16.0.2 on mao with PID 15636 (H:\程序\大三下期\spring_boot测试用例设置随机数据\target\classes started by mao in H:\程序\大三下期\spring_boot测试用例设置随机数据)
+2022-04-16 18:58:31.368 DEBUG 15636 --- [main] m.s.SpringBootRandomDataApplication      : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-16 18:58:31.368  INFO 15636 --- [main] m.s.SpringBootRandomDataApplication      : The following 1 profile is active: "dev"
+2022-04-16 18:58:31.730  INFO 15636 --- [main] m.s.SpringBootRandomDataApplication      : Started SpringBootRandomDataApplication in 0.681 seconds (JVM running for 1.143)
